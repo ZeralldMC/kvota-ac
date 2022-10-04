@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KVOTA AC</title>
+  <meta name="author" content="127GAMES">
+  <link rel="icon" href="https://127games.ml/websection/assets/kvota.png">
+  <script type="text/javascript" src="/eel.js"></script>
+  <script type="text/javascript" src="https://127games.ml/kvota/scripts/desktop/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+    
+    html {
+      background: rgb(0,29,36);
+      background: linear-gradient(27deg, rgba(0,29,36,1) 0%, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 100%);
+      height: 100%;
+      background-size: cover;
+      margin: 0;
+      color: white;
+    }
+    h1, h2, h3, h4, h5, h6, p, font, div, body, html, button {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .kvota-logo {
+      width: 50px;
+      margin: -20px 10px;
+      border: 3px solid white;
+      border-radius: 100%;
+    }
+    .content {
+      padding: 20px;
+    }
+    .main-content {
+      margin-left: 15px;
+      margin-top: 7%;
+    }
+    .wfa_maincontent {
+      color: white;
+    }
+    .wfa_findCheat {
+      color: #ff5858
+    }
+    .wfa_allFine {
+      color: #23a54b;
+    }
+    button {
+      background: white;
+      color: black;
+      border-radius: 5px;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    .verActual {
+      background: white;
+      color: #23a54b;
+      padding: 5px 8px;
+      font-size: 12px;
+      border-radius: 5px;
+      margin: 2px;
+    }
+    .noActual {
+      color: #ff5858;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+    <h2><img class="kvota-logo" src="https://127games.ml/websection/assets/kvota.png"> KVOTA <font style="opacity:0.3;">ANTI-CHEAT</font></h2>
+    <div class="main-content">
+        <p><span id="version">v1.002B</span> <span id="verCheckText"></span></p>
+        <span id="check"><p class="wfa_maincontent" style="color: white;opacity: 0.5;">Please wait until the application will check if everything is safe...</p></span>
+        <p><button onclick="checkUpdates()">Check for updates</button> <button onclick="redir('https://127games.ml/kvota/list/')">What programms KVOTA block?</button></p>
+    </div>
+</div>
+</body>
+</html>
